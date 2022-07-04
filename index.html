@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <i class="fa-solid fa-bars toggle"></i>
+            <div class="resource">
+                <i class="fa-solid fa-file-circle-exclamation"></i>
+                <a href="https://github.com/davemachado/public-api" target="_blank">Resource</a>
+            </div>
+            <form action="">
+                <input type="text" id="keyword" placeholder="search api...">
+                <button type="submit" id="searchBtn"></button>
+                <p class="error">Harap diisi</p>
+            </form>
+        </div>      
+    </div>
+    
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <h1 class="sidebar-brand">Lipi</h1>   
+            <i id='close-sidebar' class="fa-solid fa-xmark"></i>   
+            <i id="sidebar-toggle" class="fa-solid fa-bars toggle-menu"></i>
+        </div>          
+        <ul>
+            <li class="active" id="Animals">
+                <i class="fa-solid fa-paw"></i>
+            </li>
+            <li id="Anime">
+                <i class="fa-solid fa-clapperboard"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-file-shield"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-palette"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-fingerprint"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-link"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-book"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-briefcase"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-calendar-days"></i>
+            </li>
+            <li><i class="fa-solid fa-cloud-arrow-up"></i></li>
+            <li>
+                <i class="fa-solid fa-infinity"></i>
+            </li>
+            <li><i class="fa-solid fa-bitcoin-sign"></i></li>
+            <li><i class="fa-solid fa-arrows-rotate"></i></li>
+            <li><i class="fa-solid fa-calendar-check"></i></li>
+            <li><i class="fa-solid fa-layer-group"></i></li>
+            <li><i class="fa-solid fa-book-bookmark"></i></li>
+            <li><i class="fa-solid fa-file-circle-plus"></i></li>
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li><i class="fa-solid fa-masks-theater"></i></li>
+            <li><i class="fa-solid fa-building"></i></li>
+            <li><i class="fa-solid fa-calendar-day"></i></li>
+            <li><i class="fa-solid fa-coins"></i></li>
+            <li><i class="fa-solid fa-utensils"></i></li>
+            <li><i class="fa-solid fa-gamepad"></i></li>
+            <li><i class="fa-solid fa-earth-asia"></i></li>
+            <li><i class="fa-solid fa-building-columns"></i></li>
+            <li><i class="fa-solid fa-heart-circle-plus"></i></li>
+            <li><i class="fa-solid fa-user-doctor"></i></li>
+            <li><i class="fa-solid fa-laptop-code"></i></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-newspaper"></i></li>
+            <li><i class="fa-solid fa-calendar-plus"></i></li>
+            <li><i class="fa-solid fa-folder-open"></i></li>
+            <li><i class="fa-solid fa-id-card"></i></li>
+            <li><i class="fa-solid fa-user-gear"></i></li>
+            <li><i class="fa-solid fa-mobile-screen"></i></li>
+            <li><i class="fa-solid fa-camera"></i></li>
+            <li><i class="fa-solid fa-code"></i></li>
+            <li><i class="fa-solid fa-flask"></i></li>
+            <li><i class="fa-solid fa-shield-halved"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-handshake-simple"></i></li>
+            <li><i class="fa-solid fa-futbol"></i></li>
+            <li><i class="fa-solid fa-microscope"></i></li>
+            <li><i class="fa-solid fa-spell-check"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass-location"></i></li>
+            <li><i class="fa-solid fa-bus"></i></li>
+            <li><i class="fa-solid fa-arrow-down-wide-short"></i></li>
+            <li><i class="fa-solid fa-bicycle"></i></li>
+            <li><i class="fa-solid fa-circle-play"></i></li>
+            <li><i class="fa-solid fa-cloud-moon"></i></li>
+        </ul>
+    </div>
+    <!-- content start -->
+    <div class="container">
+        <main>
+            <div class="content">
+                <div class="card">
+                    <div class="card-info">
+                        <i class="fa-solid fa-lock-open"></i>
+                        <p>No Auth</p>
+                    </div>
+                    <span id="free">50</span>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="fa-solid fa-key"></i>
+                        <p>ApiKey</p>
+                    </div>            
+                    <span id="apikey">50</span>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="fa-solid fa-user-check"></i>
+                        <p>OAuth</p>
+                    </div>  
+                    <span id="oauth">50</span>
+               </div>
+               
+            </div>
+            <div class="result">
+                <h2>Result : <span id="category">Animals</span></h2>
+                <p id="total">150</p>
+            </div>
+            <div class="loading">
+                <span id="loading">Loading</span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="cards-api">  
+              
+            </div>
+        </main>     
+    </div>
+
+    <!-- content end -->
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
