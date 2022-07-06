@@ -191,12 +191,13 @@ main {
   gap: 10px;
 }
 .card-api {
-  padding: 10px;
+  padding: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
   min-height: 150px;
+  font-size: 12px;
   background-color: #fff;
 }
 .card-api .api-info {
@@ -330,7 +331,9 @@ main {
   .cards-api {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-
+  .card-api {
+    font-size: 1rem;
+  }
   .card-api .api-link {
     align-self: flex-end;
   }
