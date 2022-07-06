@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Api</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -22,15 +26,15 @@
                 <button type="submit" id="searchBtn"></button>
                 <p class="error">Harap diisi</p>
             </form>
-        </div>      
+        </div>
     </div>
-    
+
     <div class="sidebar">
         <div class="sidebar-top">
-            <h1 class="sidebar-brand">Lipi</h1>   
-            <i id='close-sidebar' class="fa-solid fa-xmark"></i>   
+            <h1 class="sidebar-brand">Lipi</h1>
+            <i id='close-sidebar' class="fa-solid fa-xmark"></i>
             <i id="sidebar-toggle" class="fa-solid fa-bars toggle-menu"></i>
-        </div>          
+        </div>
         <ul>
             <li class="active" id="Animals">
                 <i class="fa-solid fa-paw"></i>
@@ -120,17 +124,17 @@
                     <div class="card-info">
                         <i class="fa-solid fa-key"></i>
                         <p>ApiKey</p>
-                    </div>            
+                    </div>
                     <span id="apikey">50</span>
                 </div>
                 <div class="card">
                     <div class="card-info">
                         <i class="fa-solid fa-user-check"></i>
                         <p>OAuth</p>
-                    </div>  
+                    </div>
                     <span id="oauth">50</span>
-               </div>
-               
+                </div>
+
             </div>
             <div class="result">
                 <h2>Result : <span id="category">Animals</span></h2>
@@ -142,13 +146,14 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <div class="cards-api">  
-              
+            <div class="cards-api">
+
             </div>
-        </main>     
+        </main>
     </div>
 
     <!-- content end -->
     <script src="asset/js/script.js"></script>
 </body>
+
 </html>
